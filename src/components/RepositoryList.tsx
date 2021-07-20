@@ -14,6 +14,7 @@ interface Repository {
 
 export function RepositoryList() {
   const [repositories, setRepositories] = useState<Repository[]>([]);
+  
   useEffect(() => {
     fetch("https://api.github.com/orgs/rocketseat/repos")
       .then((response) => response.json())

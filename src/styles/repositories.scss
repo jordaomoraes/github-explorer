@@ -6,6 +6,7 @@ section.respository-list {
     ul {
         list-style: none;
         li {
+            // to LI que antes dela tem uma LI tbm, aplica o margin-top
             &+li {
                 margin-top: 20px;
             }
